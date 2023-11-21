@@ -1,6 +1,11 @@
 ## Description
 
 A small application for uploading images from a domain to Imgur using NestJS with a Simple JSON Database
+-  GET   `/posts`: Get all posts
+-  POST  `/posts`: Create a post with a body consists only `coverUrl` field (the image url)
+-  Every a minute the crob job will get all IDLE posts and upload the image to Imgur
+-  JSON database schema: `{ next_id: number, posts: Post[] }`
+-  Post's Schema `{ id: number, coverUrl: string, imgurCoverUrl: string, status: Status}`
 
 ## Installation
 
@@ -11,10 +16,10 @@ $ npm install
 ## Prerequisite
 ```bash
 # Add the .env
-copy .env.dist .env
+cp .env.dist .env
 
 # Optional: pre-load some testing data
-copy example.posts.json posts.json
+cp example.posts.json posts.json
 ```
 ## :warning: Attention: Things to Watch Out For :warning:
 - Make sure to add ClientID to the `.env` file and the Imgur api url is up-to-date
@@ -32,3 +37,5 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+
