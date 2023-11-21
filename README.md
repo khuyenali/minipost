@@ -5,7 +5,7 @@ A small application for uploading images from a domain to Imgur using NestJS wit
 -  POST  `/posts`: Create a post with a body consists only `coverUrl` field (the image url)
 -  Every a minute the crob job will get all IDLE posts and upload the image to Imgur
 -  JSON database schema: `{ next_id: number, posts: Post[] }`
--  Post's Schema `{ id: number, coverUrl: string, imgurCoverUrl: string, status: Status}`
+-  Post's Schema `{ id: number, coverUrl: string, imgurCoverUrl: string, status: Status }`
 
 ## Installation
 
