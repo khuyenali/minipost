@@ -26,7 +26,7 @@ cp example.posts.json posts.json
 - Don't manualy change the posts.json (database) while the Server is running
 
 
-## Running the app
+## Running the app (port 3000)
 ```bash
 # development
 $ npm run start
