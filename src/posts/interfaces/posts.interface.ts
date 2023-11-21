@@ -1,7 +1,8 @@
 export enum Status {
   IDLE,
   UPLOADING,
-  DONE
+  DONE,
+  ERROR
 }
 
 export interface Post {
@@ -9,5 +10,10 @@ export interface Post {
   coverUrl: string;
   imgurCoverUrl: string;
   status: Status
+}
+
+export interface UpdatePost {
+  imgurCoverUrl?: string;
+  status?: Status
 }
 
