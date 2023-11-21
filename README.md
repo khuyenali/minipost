@@ -22,8 +22,8 @@ cp .env.dist .env
 cp example.posts.json posts.json
 ```
 ## :warning: Attention: Things to Watch Out For :warning:
-- Make sure to add ClientID to the `.env` file and the Imgur api url is up-to-date
-- Don't manualy change the posts.json (database) while the server is running
+- Make sure to add ClientID to the `.env` file and the Imgur API url is up-to-date
+- Don't manualy change the posts.json (database) while the Server is running
 
 
 ## Running the app
