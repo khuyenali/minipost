@@ -1,6 +1,6 @@
 ## Description
 
-A Small Application for Uploading Images from a Domain to Imgur Using NestJS with a Simple JSON Database
+A small application for uploading images from a domain to Imgur using NestJS with a Simple JSON Database
 
 ## Installation
 
